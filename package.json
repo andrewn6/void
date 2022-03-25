@@ -1,0 +1,13 @@
+{
+  "name": "void",
+  "version": "1.0.0",
+  "description": "\\",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.1"
+  }
+}
