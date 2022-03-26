@@ -1,20 +1,27 @@
-import fastify from "fastify";
-import fastifyBlipp from "fastify-blipp";
-import { Server, IncomingMessage, ServerResponse } from "http";
+import Fastify from "fastify";
+import { logger } from "./modules/logger";
+import AutoLoad from "fastify-autoload";
 
-server.register(fastifyBlipp);
-const start = async () => {
-  try {
-    await server.listen(3000, '0.0.0.0');
-  } catch (err) {
-    console.log(err);
-    process.exit(1);
-  }
-};
+const fastify = Fastify();
+const port = 3000;
 
-process.on("uncaughtException", error => {
-  console.error(err);
-});
+function addRoutes() {
+  // TODO: add basic routes
+  logger.info("Registered routes.");
+}
+function runServer(): void {
+  fastify.listen(port, "0.0.0.0", (err, address) => {
+   if (!err) {
+     logger.info(`Server is running.`);
+     return;
+   }
 
-start();
+   logger.error(err.message);
+   return process.exit(1);
+  });
+}
+function main(): Promise<void> {
+  runServer();
+}
 
+main().catch(console.error);
