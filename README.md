@@ -6,3 +6,4 @@
 - TypeScript ready
 - Prisma Integration
 - Fastify Integration
+- Docker ready
