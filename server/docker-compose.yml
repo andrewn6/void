@@ -17,6 +17,10 @@ services:
       - '5432:5432'
     restart: always
     env_file: .env
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
     volumes: 
       - fastify_volume:/var/lib/postgres/data
   
