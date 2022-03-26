@@ -9,7 +9,7 @@ server.get('/ping', async (request, reply) => {
 
 server.listen(3000, (err, address) => {
   if (err) {
-    logger.error(err);
+    console.error(err)
     process.exit(1)
   }
   console.log(`Server listening at ${address}`)
