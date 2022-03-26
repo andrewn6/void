@@ -4,6 +4,9 @@
   "description": "\\",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "format": "npx prettier -c ."
+  },
   "dependencies": {
     "nodemon": "^2.0.15"
   },
