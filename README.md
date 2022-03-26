@@ -7,3 +7,4 @@
 - Prisma Integration
 - Fastify Integration
 - Docker ready
+- Frontend is pre-configured with NextJS & TailwindCSS.
