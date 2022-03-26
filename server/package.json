@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^3.11.1",
+    "@sinclair/typebox": "^0.23.4",
     "decotix": "^2.1.20",
     "fastify": "^3.0.0",
     "fastify-autoload": "^3.10.0",
