@@ -1,4 +1,4 @@
-
+{
   "compilerOptions": {
     "target": "es2017",
     "lib": ["dom", "dom.iterable", "es6", "esnext", "es2017"],
@@ -15,7 +15,6 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
-    "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
