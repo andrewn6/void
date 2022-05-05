@@ -6,7 +6,7 @@ const server = fastify()
 server.get('/ping', async (request, reply) => {
   return 'pong\n'
 })
-
+ 
 server.listen(3000, (err, address) => {
   if (err) {
     console.error(err)

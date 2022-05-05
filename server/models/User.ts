@@ -13,4 +13,6 @@ export class User {
     @Unique()
     @Property(() => String)
     email!: string 
+
+
 }
